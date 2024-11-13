@@ -1,0 +1,58 @@
+div.a {
+
+    background-color: aliceblue;
+}
+
+div.a:hover{
+    /* animation: spin 2s infinite linear; */
+    transform: rotateY(-70deg) perspective(300px) scaleZ(5);
+
+}
+
+div.b{
+    background-color: aquamarine;
+}
+
+div.b:hover{
+    /* animation: spin 2s infinite linear; */
+    transform: rotateY(70deg) perspective(300px) scaleZ(5);
+}
+
+div.c{
+    background-color: burlywood;
+}
+
+div.c:hover{
+    /* animation: spin 2s infinite linear; */
+    transform: rotateX(70deg) perspective(300px) scaleZ(5);
+}
+
+div.d{
+    background-color: darkcyan;
+}
+
+div.d:hover{
+    /* animation: spin 2s infinite linear; */
+    /* spinerererr */
+    transform: rotateX(-50deg) rotateY(40deg) perspective(300px) scaleZ(5);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) perspective(0px) scaleZ(1);
+    }
+    to {
+        transform: rotate(0deg) perspective(300px) scaleZ(5);
+    }
+}
+
+div{
+    /* center */
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s ease;
+}
